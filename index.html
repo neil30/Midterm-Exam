@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .new1 {
+            color: rgb(8, 172, 62);
+        }
+        .new2 {
+            color: rgb(187, 49, 14);
+        }
+        .new3 {
+            color: rgb(233, 120, 14);
+        }
+        .new4 {
+            color: rgb(0, 181, 253);
+        }
+    </style>
+	<head>
+		<title>HTML - Images</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="https://kit.fontawesome.com/59b2f75b67.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <section id="main">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4"></div>
+            <div class="container">
+                <div class="content">
+                    <i onclick="w3.hide('.nothing'); w3.show('.ddd');" class="toggle uuu nothing fa-solid fa-sort-up"></i>
+                    <i onclick="w3.show('.nothing'); w3.hide('.ddd');" style="margin-bottom: 20px;" class="toggle ddd fa-solid fa-sort-down"></i>
+                    <h1 class="txt new1 nothing">Midterm Exam</h1>
+                    <div class="seasons nothing">
+                        <button class="four" onclick="w3.show('.bg1'); w3.hide('.bg2'); w3.hide('.bg3'); w3.hide('.bg4'); w3.addClass('.txt','new1'); w3.removeClass('.txt','new2 new3 new4');">
+                            <i id="spring" class="fa-solid fa-fan new1" onclick="w3.addClass('#spring','new1'); w3.removeClass('#summer','new2'); w3.removeClass('#fall','new3'); w3.removeClass('#winter','new4');"></i>
+                        </button>
+                        <button class="four" onclick="w3.show('.bg2'); w3.hide('.bg1'); w3.hide('.bg3'); w3.hide('.bg4'); w3.addClass('.txt','new2'); w3.removeClass('.txt','new1 new3 new4');">
+                            <i id="summer" class="fa-solid fa-umbrella-beach" onclick="w3.addClass('#summer','new2'); w3.removeClass('#spring','new1'); w3.removeClass('#fall','new3'); w3.removeClass('#winter','new4');"></i>
+                        </button>
+                        <button class="four" onclick="w3.show('.bg3'); w3.hide('.bg1'); w3.hide('.bg2'); w3.hide('.bg4'); w3.addClass('.txt','new3'); w3.removeClass('.txt','new1 new2 new4');">
+                            <i id="fall" class="fa-brands fa-canadian-maple-leaf" onclick="w3.addClass('#fall','new3'); w3.removeClass('#spring','new1'); w3.removeClass('#summer','new2'); w3.removeClass('#winter','new4');"></i>
+                        </button>
+                        <button class="four" onclick="w3.show('.bg4'); w3.hide('.bg1'); w3.hide('.bg2'); w3.hide('.bg3'); w3.addClass('.txt','new4'); w3.removeClass('.txt','new1 new2 new3');">
+                            <i id="winter" class="fa-solid fa-snowflake" onclick="w3.addClass('#winter','new4'); w3.removeClass('#summer','new2'); w3.removeClass('#fall','new3'); w3.removeClass('#spring','new1');"></i>
+                        </button>
+                    </div>
+                    <div class="images">
+                        <img class="pp1" src="profile1.PNG" alt="">
+                        <a href="https://www.facebook.com/neil.james.tamao" target="_blank"><img class="pp2" onload="w3.hide('.pp2'); w3.hide('.none'); w3.hide('.ddd');" src="profile2.PNG" alt=""></a>
+                    </div>
+                    <h2 class="txt new1 nothing">Neil James S. Tam-ao</h2>
+                    <h3 class="txt new1 nothing">Computer Engineering</h3>
+                    <div class="buttons">
+                        <button class="reveal" onclick="w3.hide('.pp1'); w3.show('.pp2');">Reveal Photo</button>
+                    </div>
+                    <button class="yt nothing" onclick="w3.toggleShow('.none')"><i class="fa-brands fa-youtube"></i></button>
+                    <p class="none"><a href="https://www.youtube.com/watch?v=GgoDhs5lsBQ" target="_blank">Thank you sir!</a></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

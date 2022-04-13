@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+    font-family: sans-serif;
+}
+
+.bg1 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('spring.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bg2 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('summer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.bg3 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('fall.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+}
+
+.bg4 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('winter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -4;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    margin: auto;
+	width: 400px;
+    height: fit-content;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.651);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.content {
+    margin: auto;
+}
+
+.toggle {
+    font-size: 50px;
+    color: rgb(61, 61, 61);
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    transform: scale(1.2);
+}
+
+.seasons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.four {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.seasons i {
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#spring {
+    transition: 0.5s all ease-in-out;
+}
+
+#spring:hover {
+    color: rgb(8, 172, 62);
+    transform: rotate(360deg);
+}
+
+#summer {
+    transition: 0.5s all ease-in-out;
+}
+
+#summer:hover {
+    color: rgb(231, 79, 41);
+    transform: rotate(360deg);
+}
+
+#fall {
+    transition: 0.5s all ease-in-out;
+}
+
+#fall:hover {
+    color: rgb(255, 141, 34);
+    transform: rotate(360deg);
+}
+
+#winter {
+    transition: 0.5s all ease-in-out;
+}
+
+#winter:hover {
+    color: rgb(0, 181, 253);
+    transform: rotate(360deg);
+}
+
+.images {
+    margin: auto;
+}
+
+.images img {
+    position: relative;
+    height: 150px;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 11px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 5px 0;
+    text-shadow: 0px 1px 2px #000;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.pp2 {
+    margin: auto;
+}
+
+.reveal {
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid rgb(46, 46, 46);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.reveal:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.yt {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color: rgb(207, 7, 7);
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    margin: auto;
+}
+
+.yt:hover {
+    transform: scale(1.2);
+}
+
+.nothing {
+    text-align: center;
+}
